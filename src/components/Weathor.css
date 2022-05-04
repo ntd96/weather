@@ -1,0 +1,196 @@
+body {
+    background-image: url(../assets/images/background.jpg) !important;
+    /* background-repeat: round; */
+    background-size: cover;
+}
+
+.weather_ {
+
+    width: 100%;
+    height: 100vh;
+    display: grid !important;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
+}
+
+/* Border bao bọc thong 6tin */
+.weather_border {
+    width: auto;
+    height: 90%;
+    padding: 10px;
+    transform: translateY(47px);
+    border-radius: 30px;
+    display: grid;
+    justify-items: center;
+    background-color: rgba(225, 225, 225, 0.1);
+    box-shadow: 0px 0px 15px -6px black;
+}
+
+.weather_post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.weather_post span {
+    font-family: unset;
+    font-weight: 750;
+    font-size: 4rem;
+    color: #365a7a;
+}
+
+/* Width TextField */
+.weather_input-size {
+    width: 40rem;
+}
+
+.info_ {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 8%;
+}
+
+.info-title {
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    font-family: revert !important;
+    padding: 2px
+}
+
+.info_show {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-style: italic;
+}
+
+.info_show span {
+    color: #999;
+    font-style: normal;
+}
+
+.info_show::after {
+    content: '';
+    height: 1px;
+    width: auto;
+    position: absolute;
+}
+
+.info-temp {
+    font-size: 70px !important;
+}
+
+.info_show-1 {
+    border-top: 1px solid gray;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.info_show-1-label {
+    font-size: small !important;
+    color: gray !important;
+}
+
+.info_show-1-text {
+    font-style: italic !important;
+}
+
+/* Show 4 day */
+.weather_4day_ {
+    display: flex;
+    gap: 2rem;
+    width: 80%;
+    height: 80%;
+    z-index: 1;
+    position: relative;
+    top: -52%;
+}
+
+
+.weather_4day-border {
+    background-color: rgba(225, 225, 225, 0.1);
+    box-shadow: 0px 0px 15px -6px black;
+    border-radius: 25px;
+    width: 25%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Trang Info More */
+.weather_infomore {
+    height: 110px;
+    width: 65%;
+    transform: translateX(25%);
+    border-radius: 20px;
+    margin: 10px 0px;
+    justify-content: center;
+    background-color: rgba(225, 225, 225, 0.1);
+    box-shadow: 0px 0px 15px -6px black;
+}
+
+
+/* Description */
+
+/* Màng hình nhỏ hơn 500px thì width Textfield auto  */
+@media screen and (max-Width: 1000px) {
+
+    body {
+        background-image: url(../assets/images/background.jpg) !important;
+    }
+
+    .weather_input-size {
+        width: auto
+    }
+
+    .weather_border {
+        width: auto;
+        height: 100%;
+        transform: translateY(0%);
+        border-radius: 4%;
+        display: grid;
+        justify-items: center;
+        background-color: rgba(225, 225, 225, 0.1);
+        box-shadow: 0px 0px 15px -6px black;
+    }
+
+    .info_show {
+        padding: 10px;
+    }
+
+    .weather_infomore {
+        width: 100%;
+        height: 60%;
+        transform: translateX(0px);
+        border-radius: 4%;
+        display: grid;
+        justify-items: center;
+        background-color: rgba(225, 225, 225, 0.1);
+        box-shadow: 0px 0px 15px -6px black;
+    }
+
+    .weather_4day_ {
+        height: 90%;
+        margin-top: 6%;
+        width: 100%;
+        transform: translateY(73px);
+        text-align: center;
+    }
+
+    .weather_infomore {
+        height: 110px;
+    width: 94%;
+    transform: translateX(3%);
+    border-radius: 20px;
+    justify-content: center;
+    }
+}
